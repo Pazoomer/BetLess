@@ -49,15 +49,15 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #5bc1ac;
-  --secondary-color:              #5a6f80;
-  --section-bg-color:             #f0f8ff;
-  --site-footer-bg-color:         #44525d;
-  --custom-btn-bg-color:          #597081;
-  --custom-btn-bg-hover-color:    #5bc1ac;
+  --primary-color:                #0F62FE;   
+  --secondary-color:              #21272A;   
+  --section-bg-color:             #F4F4F4;   
+  --site-footer-bg-color:         #161616;   
+  --custom-btn-bg-color:          #0F62FE;   
+  --custom-btn-bg-hover-color:    #0353E9;   
   --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #e9eaeb;
+  --p-color:                      #b1bec9;   
+  --border-color:                 #DDE1E6;
 
   --body-font-family:             'Metropolis', sans-serif;
 
@@ -575,17 +575,20 @@ strong {
 }
 
 #hero-slide .carousel-caption {
-  background: var(--white-color);
-  clip-path: polygon(100% 100%, 100% 150px, 0 100%);
-  color: var(--secondary-color);
-  top: 1px;
-  bottom: -1px;
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  left: auto;
-  text-align: right;
-  min-width: 680px;
-  min-height: 680px;
-  padding: 100px 100px 50px 100px;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* capa oscura semitransparente */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  flex-direction: column; /* para que <h1> y <p> estén uno debajo del otro */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8); /* mejor visibilidad del texto */
 }
 
 .carousel-image {
