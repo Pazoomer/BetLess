@@ -86,6 +86,10 @@ body {
   font-family: var(--body-font-family); 
 }
 
+/* Enlaces del navbar */
+.navbar-nav .nav-link {
+  color: black !important;
+}
 
 /*---------------------------------------
   TYPOGRAPHY               
